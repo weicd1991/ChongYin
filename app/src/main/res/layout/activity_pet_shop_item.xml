@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_rectangle3"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:id="@+id/rela_img"
+        android:layout_width="100dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/img_pet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rela_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/chongwushangdian_biaoqian2"
+            android:gravity="center_horizontal"
+            android:paddingBottom="2dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/img_right"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/shouye_yuanbao_iocn"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_right"
+                android:text="5000"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_pet_name"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rela_img"
+        android:gravity="center_vertical"
+        android:text="巴西龟"
+        android:textColor="#555"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_pet_nc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pet_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/rela_img"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="巴西小乌龟"
+        android:textColor="#aaa"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_pet_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pet_nc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/rela_img"
+        android:gravity="center_vertical"
+        android:text="12.8M"
+        android:textColor="#aaa"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/press_pet"
+        style="@style/InitProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/rela_img"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rela_img"
+        android:max="25"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/rela_img"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rela_img"
+        android:background="@drawable/petshopbutton_bg1"
+        android:text="获取"
+        android:textColor="#5dc080"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rela_img"
+        android:layout_marginTop="15dp"
+        android:background="#d5d5d5" />
+
+</RelativeLayout>

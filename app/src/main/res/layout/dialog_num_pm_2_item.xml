@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/tv_num1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/no1" />
+
+        <com.jsmy.chongyin.view.CircleImageView
+            android:id="@+id/tv_num1_tx"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/tx_img"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_num1"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tv_num1_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_num1_tx"
+            android:text="上流小瘪三小瘪三小瘪三"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tv_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="200" />
+
+        <ImageView
+            android:id="@+id/img_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_200"
+            android:src="@mipmap/shouye_yuanbao_iocn" />
+
+        <TextView
+            android:id="@+id/tv_200_jl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="奖励"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/img_200"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

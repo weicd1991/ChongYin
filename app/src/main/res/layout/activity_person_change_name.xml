@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_change_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jsmy.chongyin.activity.PersonChangeNameActivity"
+    android:fitsSystemWindows="true"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:id="@+id/rela_edit"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_rectangle3">
+        <RelativeLayout
+            android:id="@+id/rela_sreach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/edit_personnc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center_vertical"
+                android:hint="我的昵称"
+                android:maxLength="12"
+                android:paddingLeft="10dp"
+                android:textColor="#888"
+                android:textColorHint="#ccc"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_ncnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="0/12"
+                android:textColor="#ccc" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/fanhui" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

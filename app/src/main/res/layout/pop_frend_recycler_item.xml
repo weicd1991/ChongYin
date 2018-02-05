@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="65dp"
+        android:layout_height="wrap_content">
+
+        <com.jsmy.chongyin.view.CircleImageView
+            android:id="@+id/img_tx"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/tx_img"
+            app:civ_border_color="#8AA1EF"
+            app:civ_border_width="2dp" />
+
+        <RelativeLayout
+            android:id="@+id/rela_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="-8"
+                android:src="@mipmap/haoyouliebiao_touxianghuangguan_icon" />
+
+            <TextView
+                android:id="@+id/tv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:rotation="-40"
+                android:text="V7"
+                android:textColor="#fff"
+                android:textSize="5sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_love"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/img_tx"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/haoyouliebiao_aixin_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_nc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_tx"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:text="绘图员绘图"
+            android:textColor="#888"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

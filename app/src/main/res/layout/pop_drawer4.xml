@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rela_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/di"
+            android:padding="5dp"
+            android:src="@mipmap/zhuye" />
+
+        <LinearLayout
+            android:id="@+id/linear_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_close"
+            android:layout_marginTop="-5dp"
+            android:background="#EDEEF2"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/tv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_drawer_bg"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edit_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/tv_send"
+                    android:layout_alignBottom="@+id/tv_send"
+                    android:layout_toLeftOf="@+id/tv_send"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center_vertical"
+                    android:hint="弹幕留言"
+                    android:maxLength="40"
+                    android:minHeight="35dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_tab"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/linear_icon"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/tab_friend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp"
+                    android:src="@mipmap/tanmu" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_emoji"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#EDEEF2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp"
+                    android:src="@drawable/f701" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_food"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#EDEEF2">
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_groud"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#EDEEF2">
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_shop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#EDEEF2">
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_rank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#EDEEF2">
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_pan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#EDEEF2">
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_danmu"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/linear_tab"
+            android:background="#FFFFFF"
+            android:visibility="visible">
+
+            <com.jsmy.chongyin.view.RefreshRecyclerView
+                android:id="@+id/recycler_frend"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="155dp"
+                android:background="#EEFFFFFF"
+                app:load_more_able="false"
+                app:refresh_able="false">
+
+            </com.jsmy.chongyin.view.RefreshRecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/linear_tab"
+            android:background="#FFFFFF"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/my_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linear_bottom">
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/linear_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rela_cy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#E6E6E6">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="2dp"
+                        android:src="@drawable/f701" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rela_emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#EDEEF2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="2dp"
+                        android:src="@drawable/f481" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rela_dw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#EDEEF2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="2dp"
+                        android:src="@drawable/f421" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rela_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#EDEEF2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="2dp"
+                        android:src="@drawable/emojivip" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#EDEEF2">
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

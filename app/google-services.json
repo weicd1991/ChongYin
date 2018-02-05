@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "727704909821",
+    "firebase_url": "https://urmer-e49f8.firebaseio.com",
+    "project_id": "urmer-e49f8",
+    "storage_bucket": "urmer-e49f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727704909821:android:299fd317908eb616",
+        "android_client_info": {
+          "package_name": "com.jsmy.chongyin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727704909821-9fq7d5oksvo0c6m1fpt5589vp8j5de5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaqqsc58I4XAyNoqkS8nuzIIrRKiQnzE4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

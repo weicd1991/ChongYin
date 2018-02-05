@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:id="@+id/rela_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="#00000000">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/chacha"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_bang"
+        android:layout_above="@+id/rela_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg">
+
+        <LinearLayout
+            android:id="@+id/rela_title"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/noline"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="上周上榜用户"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:rotation="180"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/noline"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/tv_num1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/no1" />
+
+                <com.jsmy.chongyin.view.CircleImageView
+                    android:id="@+id/tv_num1_tx"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/tx_img"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_num1"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tv_num1_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_num1_tx"
+                    android:text="上流小瘪三小瘪三小瘪三"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/tv_200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="200" />
+
+                <ImageView
+                    android:id="@+id/img_200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_200"
+                    android:src="@mipmap/shouye_yuanbao_iocn" />
+
+                <TextView
+                    android:id="@+id/tv_200_jl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="奖励"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/img_200"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/tv_num2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/no2" />
+
+                <com.jsmy.chongyin.view.CircleImageView
+                    android:id="@+id/tv_num2_tx"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/tx_img"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_num2"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tv_num2_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_num2_tx"
+                    android:text="上流小瘪三小瘪三"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/tv_150"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="150" />
+
+                <ImageView
+                    android:id="@+id/img_150"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_150"
+                    android:src="@mipmap/shouye_yuanbao_iocn" />
+
+                <TextView
+                    android:id="@+id/tv_150_jl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="奖励"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/img_150"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/tv_num3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/no3" />
+
+                <com.jsmy.chongyin.view.CircleImageView
+                    android:id="@+id/tv_num3_tx"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/tx_img"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_num3"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tv_num3_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_num3_tx"
+                    android:text="上流小瘪三"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/tv_100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="100" />
+
+                <ImageView
+                    android:id="@+id/img_100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_100"
+                    android:src="@mipmap/shouye_yuanbao_iocn" />
+
+                <TextView
+                    android:id="@+id/tv_100_jl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="奖励"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/img_100"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/tv_num4"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/no4" />
+
+                <com.jsmy.chongyin.view.CircleImageView
+                    android:id="@+id/tv_num4_tx"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/tx_img"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_num4"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tv_num4_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_num4_tx"
+                    android:text="上流小瘪三"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/tv_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="50" />
+
+                <ImageView
+                    android:id="@+id/img_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_50"
+                    android:src="@mipmap/shouye_yuanbao_iocn" />
+
+                <TextView
+                    android:id="@+id/tv_50_jl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="奖励"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/img_50"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/tv_num5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/no5" />
+
+                <com.jsmy.chongyin.view.CircleImageView
+                    android:id="@+id/tv_num5_tx"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/tx_img"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_num5"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tv_num5_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_num5_tx"
+                    android:text="上流小瘪三小瘪三"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/tv_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="30" />
+
+                <ImageView
+                    android:id="@+id/img_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_30"
+                    android:src="@mipmap/shouye_yuanbao_iocn" />
+
+                <TextView
+                    android:id="@+id/tv_30_jl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="奖励"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/img_30"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/rela_title"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_check"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="领取"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:background="@drawable/button_bg"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

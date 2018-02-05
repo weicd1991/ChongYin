@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/img_tx"
+        android:layout_marginBottom="5dp"
+        android:layout_alignTop="@+id/img_tx"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/img_tx"
+        android:layout_marginLeft="10dp"
+        android:layout_alignRight="@+id/tv_danmu"
+        android:background="@drawable/base_rectangle_danmu">
+
+    </RelativeLayout>
+
+    <com.jsmy.chongyin.view.CircleImageView
+        android:id="@+id/img_tx"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/tx_img"
+        app:civ_border_color="#88FFFFFF"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/tv_danmu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_tx"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textSize="12sp"
+        android:paddingRight="20dp"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:enabled="false" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/edit_moon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:paddingLeft="15dp"
+            android:hint="请输入小于120的整数"
+            android:maxLength="3"
+            android:textColorHint="#b5b5b5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edit_moon"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

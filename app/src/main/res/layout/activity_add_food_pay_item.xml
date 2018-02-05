@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_rectangle3">
+
+    <RelativeLayout
+        android:id="@+id/rela_food1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_food1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/shiwufenlei_shuiguo" />
+
+        <TextView
+            android:id="@+id/tv_food1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_food1"
+            android:layout_centerHorizontal="true"
+            android:text="x2"
+            android:textColor="#888"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_food2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/rela_food1">
+
+        <ImageView
+            android:id="@+id/img_food2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shouye_jitui_iocn" />
+
+        <TextView
+            android:id="@+id/tv_food2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_food2"
+            android:text="+20%"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_yuanbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/base_rectangle6">
+
+        <ImageView
+            android:id="@+id/img_gold1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shouye_yuanbao_iocn" />
+
+        <TextView
+            android:id="@+id/tv_gold1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_gold1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img_gold1"
+            android:text="x8"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_gold1"
+            android:text="VIP"
+            android:textColor="#FEFD90"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/img_gold2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tv_vip"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_vip"
+            android:src="@mipmap/shouye_yuanbao_iocn" />
+
+        <TextView
+            android:id="@+id/tv_gold2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_gold2"
+            android:layout_toRightOf="@+id/img_gold2"
+            android:text="x6"
+            android:textColor="#FEFD90"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rela_food1"
+        android:layout_marginTop="5dp"
+        android:background="#D5D5D5" />
+
+</RelativeLayout>

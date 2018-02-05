@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_new_frend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jsmy.chongyin.activity.NewFrendActivity"
+    android:fitsSystemWindows="true"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_rectangle3"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:id="@+id/rela_sreach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/edit_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center_vertical"
+                android:hint="输入好友ID"
+                android:paddingLeft="10dp"
+                android:textColor="#888"
+                android:textColorHint="#ccc"
+                android:textSize="15sp"
+                android:digits="0123456789"
+                />
+
+            <ImageView
+                android:id="@+id/img_sreach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/xinpengyou_sousuo" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rela_sreach"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="好友申请"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rela_sreach"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="消除记录"
+            android:textColor="#5DC080"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bg_apply"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_clear"
+            android:layout_marginTop="10dp"
+            android:background="#eee" />
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/newfrend_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bg_apply">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/fanhui" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

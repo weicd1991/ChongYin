@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_change_gender"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jsmy.chongyin.activity.PersonChangeGenderActivity"
+    android:fitsSystemWindows="true"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:id="@+id/rela_edit"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_rectangle3">
+
+        <RelativeLayout
+            android:id="@+id/rela_man"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="男"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/check_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/checkbox_stye"
+                android:checked="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line_man"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rela_man"
+            android:layout_marginTop="10dp"
+            android:background="#eee" />
+
+        <RelativeLayout
+            android:id="@+id/rela_woman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_man"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="女"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/check_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/checkbox_stye"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line_woman"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rela_woman"
+            android:layout_marginTop="10dp"
+            android:background="#eee" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/fanhui" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

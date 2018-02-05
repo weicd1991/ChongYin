@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_open_vip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jsmy.chongyin.activity.OpenVIPActivity"
+    android:fitsSystemWindows="true"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_rectangle3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rela_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_kthy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开通会员"
+                android:textColor="#B5B5B5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_kthy"
+                android:text="ID:12345678"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line_id"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rela_id"
+            android:layout_marginTop="15dp"
+            android:background="#eee" />
+
+        <RelativeLayout
+            android:id="@+id/rela_yf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_id"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="月份"
+                android:textColor="#B5B5B5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/openvip_unchoice_button_bg"
+                android:gravity="center"
+                android:text="其他"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_other"
+                android:background="@drawable/openvip_unchoice_button_bg"
+                android:gravity="center"
+                android:text="   6   "
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_six"
+                android:background="@drawable/openvip_unchoice_button_bg"
+                android:gravity="center"
+                android:text="   3   "
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_three"
+                android:background="@drawable/openvip_choice_button_bg"
+                android:gravity="center"
+                android:text="   1   "
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line_yf"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rela_yf"
+            android:layout_marginTop="15dp"
+            android:background="#eee" />
+
+        <RelativeLayout
+            android:id="@+id/rela_je"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_yf"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_left_je"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_je"
+                android:text="金额"
+                android:textColor="#B5B5B5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_je"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_left_je"
+                android:text="20"
+                android:textColor="#F2AA32"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_je"
+                android:layout_toRightOf="@+id/tv_je"
+                android:text="元"
+                android:textColor="#B5B5B5"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line_je"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rela_je"
+            android:layout_marginTop="15dp"
+            android:background="#eee" />
+
+        <TextView
+            android:id="@+id/btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_je"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="立即开通"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:src="@mipmap/fanhui" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

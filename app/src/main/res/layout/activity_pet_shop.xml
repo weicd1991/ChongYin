@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pet_shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jsmy.chongyin.activity.PetShopActivity"
+    android:fitsSystemWindows="true"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.jsmy.chongyin.view.RefreshRecyclerView
+            android:id="@+id/pet_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:load_more_able="false"
+            app:refresh_able="false">
+
+        </com.jsmy.chongyin.view.RefreshRecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/fanhui" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

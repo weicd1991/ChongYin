@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/denglu"
+    android:orientation="vertical"
+    tools:context="com.jsmy.chongyin.activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/img_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="75dp"
+                    android:src="@mipmap/logo"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_dh"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_above="@+id/edit_mm"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center_vertical"
+                    android:hint="输入手机号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edit_mm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_above="@+id/tv_login"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center_vertical"
+                    android:hint="输入密码"
+                    android:maxLength="18"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_forga"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/button_bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="登录"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/linear_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/tv_forga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_or"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="20dp"
+                        android:text="忘记密码？"
+                        android:textColor="@color/selector_text_press_color3"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="1px"
+                            android:background="#DDDDDD" />
+
+                        <TextView
+                            android:id="@+id/tv_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_btn"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="或"
+                            android:textColor="#555" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="1px"
+                            android:background="#DDDDDD" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_contanst"
+                        android:orientation="horizontal">
+
+
+                        <com.jsmy.chongyin.view.CircleImageView
+                            android:id="@+id/img_weiixn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@mipmap/denglu_weixin" />
+
+
+                        <com.jsmy.chongyin.view.CircleImageView
+                            android:id="@+id/img_qq"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@mipmap/denglu_qq" />
+
+
+                        <com.jsmy.chongyin.view.CircleImageView
+                            android:id="@+id/img_xinlang"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@mipmap/denglu_weibo" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_contanst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/base_rectangle_new"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="新建宠印账号"
+                        android:textColor="@color/selector_text_press_color" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_contanst2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="新建宠印账户"
+                    android:textColor="@color/selector_text_press_color2"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

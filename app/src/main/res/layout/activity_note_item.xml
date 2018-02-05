@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEDED"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rela_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_rectangle_note"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:text="索拉卡的甲方来等级是否拉克丝建档立卡手机端几点啦看阿拉斯加的了看见埃里克森阶段了卡时啊拉克丝建档立卡手机端埃里克森几点啦看"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.2" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_data"
+            android:layout_marginTop="10dp"
+            android:text="2017-11-05 23:21:32"
+            android:textColor="#BCBCBC"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_data"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:text="2017年11月05日 周日 23:21提醒"
+            android:textColor="#BCBCBC"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/img_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/clock_g"
+            android:layout_below="@+id/tv_data"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tv_clock"
+            android:layout_marginRight="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

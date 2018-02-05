@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_change_age"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jsmy.chongyin.activity.PersonChangeAgeActivity"
+    android:fitsSystemWindows="true"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:id="@+id/rela_edit"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_rectangle3">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="出生日期"
+            android:textSize="15sp" />
+
+        <com.jsmy.chongyin.customclass.PickerScrollView
+            android:id="@+id/picker_year"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tv_day"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <com.jsmy.chongyin.customclass.PickerScrollView
+            android:id="@+id/picker_moon"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tv_day"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <com.jsmy.chongyin.customclass.PickerScrollView
+            android:id="@+id/picker_day"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_day"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_day"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="95dp"
+            android:background="#D5D5D5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_day"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="125dp"
+            android:background="#D5D5D5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/fanhui" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
